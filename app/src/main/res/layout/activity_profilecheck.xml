@@ -1,0 +1,110 @@
+<!-- res/layout/activity_profile.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_profilename"
+        android:layout_width="377dp"
+        android:layout_height="74dp"
+        android:text="이름"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.481"
+        tools:layout_editor_absoluteX="5dp" />
+
+    <TextView
+        android:id="@+id/tv_profiledetail1"
+        android:layout_width="380dp"
+        android:layout_height="26dp"
+        android:text="언어"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_profilename"
+        app:layout_constraintVertical_bias="0.177"
+        tools:layout_editor_absoluteX="2dp" />
+
+    <TextView
+        android:id="@+id/tv_profiledetail2"
+        android:layout_width="380dp"
+        android:layout_height="26dp"
+        android:text="성별"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_profilename"
+        app:layout_constraintVertical_bias="0.239"
+        tools:layout_editor_absoluteX="2dp" />
+
+    <TextView
+        android:id="@+id/tv_profiledetail3"
+        android:layout_width="380dp"
+        android:layout_height="26dp"
+        android:text="나라"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_profilename"
+        app:layout_constraintVertical_bias="0.302"
+        tools:layout_editor_absoluteX="2dp" />
+
+    <TextView
+        android:id="@+id/tv_profiledetail4"
+        android:layout_width="380dp"
+        android:layout_height="26dp"
+        android:text="만남지역"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_profilename"
+        app:layout_constraintVertical_bias="0.364"
+        tools:layout_editor_absoluteX="5dp" />
+
+    <TextView
+        android:id="@+id/tv_profiledetail5"
+        android:layout_width="380dp"
+        android:layout_height="152dp"
+        android:text="하고픈말"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_profilename"
+        app:layout_constraintVertical_bias="0.611"
+        tools:layout_editor_absoluteX="5dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="290dp"
+        android:layout_height="286dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <Button
+        android:id="@+id/bt_pay1"
+        android:layout_width="162sp"
+        android:layout_height="51sp"
+        android:text="pay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.927" />
+
+    <Button
+        android:id="@+id/bt_review1"
+        android:layout_width="162dp"
+        android:layout_height="51dp"
+        android:text="review"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.935"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.927" />
+</androidx.constraintlayout.widget.ConstraintLayout>
