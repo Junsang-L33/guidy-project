@@ -45,6 +45,7 @@
         <activity
             android:name=".ProfileActivity"
             android:exported="true" />
+        <activity android:name=".ProfileCheck" />
         <activity
             android:name=".LoginActivity"
             android:exported="true" /> <!-- SignUpActivity는 내부에서만 호출되지만, LoginActivity에서 시작되므로 exported를 true로 설정 -->

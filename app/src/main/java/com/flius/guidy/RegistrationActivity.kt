@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class RegistrationActivity : AppCompatActivity() {
+class RegistrationActivity : AppCompatActivity(), PersonAdapter.OnItemClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,7 +18,7 @@ class RegistrationActivity : AppCompatActivity() {
         // RecyclerView 설정
         val recyclerView: RecyclerView = findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = PersonAdapter(getPersonList())
+        recyclerView.adapter = PersonAdapter(getPersonList(), this)
 
         // BottomNavigationView 변수 선언 및 초기화
         val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottom_navigation)
@@ -54,9 +54,17 @@ class RegistrationActivity : AppCompatActivity() {
         }
     }
 
+    override fun onItemClick(person: Person) {
+        val intent = Intent(this, ProfileCheck::class.java).apply {
+            putExtra(ProfileCheck.EXTRA_NAME, person.name)
+            putExtra(ProfileCheck.EXTRA_DETAILS, person.details)
+        }
+        startActivity(intent)
+    }
+
     private fun getPersonList(): List<Person> {
         return listOf(
-            Person("좁밥준상ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ", "Details about John"),
+            Person("좁밥준상", "Details about John"),
             Person("멸치민재", "Details about Jane"),
             Person("뿡뿡이기성", "Details about Sam"),
             // 추가 인물 데이터
