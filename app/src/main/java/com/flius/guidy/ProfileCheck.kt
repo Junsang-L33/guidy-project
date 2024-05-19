@@ -29,7 +29,7 @@ class ProfileCheck : AppCompatActivity() {
         val reviewButton: Button = findViewById(R.id.bt_review1)
         reviewButton.text = "Review"
         reviewButton.setOnClickListener {
-            startActivity(Intent(this, ReviewActivity1::class.java))
+            startActivity(Intent(this, ReviewListActivity::class.java))
             //게시물올린 사람에 따라서 이동하는 리뷰페이지가 달라져야함
         }
 
