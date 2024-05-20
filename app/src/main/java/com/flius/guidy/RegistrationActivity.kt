@@ -55,9 +55,9 @@ class RegistrationActivity : AppCompatActivity(), PersonAdapter.OnItemClickListe
     }
 
     override fun onItemClick(person: Person) {
-        val intent = Intent(this, ProfileCheck::class.java).apply {
-            putExtra(ProfileCheck.EXTRA_NAME, person.name)
-            putExtra(ProfileCheck.EXTRA_DETAILS, person.details)
+        val intent = Intent(this, PostCheck::class.java).apply {
+            putExtra(PostCheck.EXTRA_NAME, person.name)
+            putExtra(PostCheck.EXTRA_DETAILS, person.details)
         }
         startActivity(intent)
     }

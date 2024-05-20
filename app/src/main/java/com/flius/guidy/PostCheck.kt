@@ -6,10 +6,10 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
-class ProfileCheck : AppCompatActivity() {
+class PostCheck : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_profilecheck)
+        setContentView(R.layout.activity_postcheck)
 
         val name = intent.getStringExtra(EXTRA_NAME)
         val details = intent.getStringExtra(EXTRA_DETAILS)
