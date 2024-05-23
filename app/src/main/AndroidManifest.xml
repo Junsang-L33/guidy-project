@@ -29,9 +29,7 @@
         <activity
             android:name=".PayActivity"
             android:exported="false" />
-        <activity
-            android:name=".ReviewActivity4"
-            android:exported="false" />
+
         <activity
             android:name=".ReviewActivity3"
             android:exported="false" />
@@ -41,18 +39,7 @@
         <activity
             android:name=".ReviewActivity1"
             android:exported="false" />
-        <activity
-            android:name=".PostActivity4"
-            android:exported="false" />
-        <activity
-            android:name=".PostActivity3"
-            android:exported="false" />
-        <activity
-            android:name=".PostActivity2"
-            android:exported="false" />
-        <activity
-            android:name=".PostActivity1"
-            android:exported="false" />
+
         <activity
             android:name=".ProfileActivity"
             android:exported="true" />
@@ -65,9 +52,7 @@
         <activity
             android:name=".RegistrationActivity"
             android:exported="true" /> <!-- PaymentActivity 설정, 필요에 따라 유지 -->
-        <activity
-            android:name=".PaymentActivity"
-            android:exported="true" />
+
         <activity android:name=".ma" />
         <activity
             android:name=".LoginActivity"
