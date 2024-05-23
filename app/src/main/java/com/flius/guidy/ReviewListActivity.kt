@@ -26,10 +26,7 @@ class ReviewListActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.toolbar)
 
-        val reviewButton: Button = findViewById(R.id.bt_reviewPost)
-        reviewButton.setOnClickListener {
-            startActivity(Intent(this, ReviewActivity2::class.java))
-        }
+
         // Sample data
         reviewList = mutableListOf(
             Review("아앙대니", "2024-05-20", 1, "냄새나요!"),

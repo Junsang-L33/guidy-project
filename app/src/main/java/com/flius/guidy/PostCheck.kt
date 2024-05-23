@@ -20,11 +20,7 @@ class PostCheck : AppCompatActivity() {
         nameTextView.text = name
         detailsTextView.text = details
 
-        val payButton: Button = findViewById(R.id.bt_pay1)
-        payButton.text = "Pay"
-        payButton.setOnClickListener {
-            startActivity(Intent(this, PayActivity::class.java))
-        }
+
 
         val reviewButton: Button = findViewById(R.id.bt_review1)
         reviewButton.text = "Review"
