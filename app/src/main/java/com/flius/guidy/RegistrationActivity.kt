@@ -2,6 +2,7 @@ package com.flius.guidy
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageButton
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -46,12 +47,12 @@ class RegistrationActivity : AppCompatActivity(), PersonAdapter.OnItemClickListe
                 else -> false
             }
         }
-
-        // ImageButton 변수 선언 및 초기화
         val buttonIcon: ImageButton = findViewById(R.id.baseline_add)
         buttonIcon.setOnClickListener {
-            setContentView(R.layout.activity_register_post)
+            val intent = Intent(this, Register_post::class.java)
+            startActivity(intent)
         }
+
     }
 
     override fun onItemClick(person: Person) {

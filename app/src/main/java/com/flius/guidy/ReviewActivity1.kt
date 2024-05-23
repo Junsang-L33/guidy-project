@@ -11,12 +11,6 @@ class ReviewActivity1 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_review_list)
 
-        val reviewButton: Button = findViewById(R.id.bt_reviewPost)
-        reviewButton.setOnClickListener {
-            startActivity(Intent(this, ReviewActivity2::class.java))
-        }
-
-
 
     }
 }
