@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">guidy</string>
+    <string name="app_name">GUIDDY</string>
     <string name="chating">chating</string>
     <string name="type_message">Type a message...</string>
     <string name="send">Send</string>
@@ -16,6 +16,4 @@
     <string name="female">Female</string>
     <string name="Save">Save</string>
     <string name="phone_hint">Phone</string>
-
-
 </resources>

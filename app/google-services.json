@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "256545245109",
+    "project_id": "guiddy-8fb9a",
+    "storage_bucket": "guiddy-8fb9a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:256545245109:android:4cacd1560c77aa71be7bfc",
+        "android_client_info": {
+          "package_name": "com.flius.guiddy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjILUxcJPvce3ThnzQjMlCRRYMBVdYozY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
