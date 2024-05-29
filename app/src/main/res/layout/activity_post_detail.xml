@@ -23,12 +23,12 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/tv_profilename"
-            app:layout_constraintVertical_bias="0.116" />
+            app:layout_constraintVertical_bias="0.141" />
 
         <TextView
             android:id="@+id/tv_profiledetail2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="178dp"
+            android:layout_height="30dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
@@ -40,7 +40,7 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/tv_profilename"
-            app:layout_constraintVertical_bias="0.211" />
+            app:layout_constraintVertical_bias="0.255" />
 
         <TextView
             android:id="@+id/tv_profiledetail5"
@@ -75,8 +75,8 @@
 
         <TextView
             android:id="@+id/tv_profiledetail3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="178dp"
+            android:layout_height="30dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
@@ -88,7 +88,7 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/tv_profilename"
-            app:layout_constraintVertical_bias="0.397" />
+            app:layout_constraintVertical_bias="0.253" />
 
         <TextView
             android:id="@+id/tv_pay"
@@ -105,8 +105,7 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/tv_profilename"
-            app:layout_constraintVertical_bias="0.303" />
-
+            app:layout_constraintVertical_bias="0.377" />
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="150dp"
