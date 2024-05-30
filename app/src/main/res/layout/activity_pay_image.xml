@@ -95,7 +95,8 @@
             android:id="@+id/btn_pay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary"
+            android:background="@drawable/border_button"
+            android:backgroundTint="@color/pink"
             android:padding="15dp"
             android:text="Pay"
             android:textColor="@android:color/white"/>

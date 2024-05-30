@@ -10,22 +10,17 @@
 
     >
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="232dp"
+        app:srcCompat="@drawable/top_background" />
+
     <TextView
         android:id="@+id/tv_e1"
-        android:layout_width="397dp"
-        android:layout_height="70dp"
+        android:layout_width="371dp"
+        android:layout_height="56dp"
         android:text="" />
-    <ImageView
-        android:id="@+id/myImageView"
-        android:layout_width="360dp"
-        android:layout_height="159dp"
-        android:src="@drawable/guiddy_main_logo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView"
@@ -43,7 +38,9 @@
         android:id="@+id/email_edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="이메일"
+        android:drawableStart="@drawable/email"
+        android:drawablePadding="16dp"
+        android:hint="Email"
         android:inputType="textEmailAddress"
         android:layout_margin="2dp"/>
 
@@ -51,7 +48,9 @@
         android:id="@+id/password_edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="비밀번호"
+        android:drawableStart="@drawable/password"
+        android:drawablePadding="16dp"
+        android:hint="Password"
         android:inputType="numberPassword"
         android:layout_margin="2dp"/>
     <RadioGroup
@@ -64,14 +63,14 @@
             android:id="@+id/bt_radioLocal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="내국인"
+            android:text="Local"
             android:checked="true"/>
 
         <RadioButton
             android:id="@+id/bt_radioForeign"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="외국인"/>
+            android:text="foreigner"/>
 
     </RadioGroup>
 
@@ -86,7 +85,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="로그인"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="Login"
+        android:backgroundTint="@color/pink"
         android:background="@drawable/border_button"
         />
 
@@ -101,7 +103,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="회원가입"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="Register"
+        android:backgroundTint="@color/pink"
         android:background="@drawable/border_button"
         />
 
