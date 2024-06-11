@@ -15,7 +15,7 @@
         android:id="@+id/chat_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/pink"
+        android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
@@ -23,14 +23,13 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
-            android:backgroundTint="@color/pink"
             android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/profile_image"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_marginStart="5dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
                 android:background="@drawable/border_image"
                 android:contentDescription="@string/profile_image"
@@ -40,9 +39,7 @@
                 android:id="@+id/profile_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
                 android:text="User Name"
-                android:backgroundTint="@color/pink"
                 android:textColor="@android:color/white"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -81,30 +78,18 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/send_btn"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_weight="15"
-            android:background="@drawable/btn_background"
-            android:textColor="@color/white"
+            android:background="@drawable/rounded_button"
+            android:padding="10dp"
             android:text="전송"
-            />
+            android:textColor="@android:color/white"
+            android:textSize="14sp"/>
 
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/bt_move"
-        android:layout_width="wrap_content"
-        android:layout_height="38dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="15dp"
-        android:background="@drawable/border_button"
-        android:backgroundTint="@color/white"
-        android:text="Profile"
-        android:textColor="@color/black"
-        android:textSize="14sp" />
 </RelativeLayout>

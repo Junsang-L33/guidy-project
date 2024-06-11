@@ -38,11 +38,7 @@ class ChatActivity : AppCompatActivity() {
         binding = ActivityChatBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val movebutton: Button = findViewById(R.id.bt_move)
-        movebutton.setOnClickListener {
-            val intent = Intent(this, Yourprofile::class.java)
-            startActivity(intent)
-        }
+
         //메시지 초기화
         messageList = ArrayList()
         val messageAdapter: MessageAdapter = MessageAdapter(this, messageList)

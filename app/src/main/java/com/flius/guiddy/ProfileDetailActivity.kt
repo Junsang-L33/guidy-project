@@ -42,10 +42,11 @@ class ProfileDetailActivity : AppCompatActivity() {
             val languages = snapshot.child("language").getValue(String::class.java)
             val imageUrl = snapshot.child("profileImageUrl").getValue(String::class.java)
 
-            binding.nicknameEdit.text = nickname
-            binding.regionEdit.text = region
-            binding.sexEdit.text = gender
-            binding.languageEdit.text = languages
+            binding.nicknameEdit.setText(nickname)
+            binding.regionEdit.setText(region)
+            binding.sexEdit.setText(gender)
+            binding.languageEdit.setText(languages)
+
 
 
             if (imageUrl != null) {

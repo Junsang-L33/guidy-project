@@ -7,17 +7,34 @@
     android:padding="16dp"
     tools:context=".LoginActivity">
 
+    <TextView
+        android:id="@+id/top_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bar_background"
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="@font/nanum_barun_gothic"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Posting"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/free"
-        android:layout_width="378dp"
-        android:layout_height="345dp"
-        android:layout_marginTop="112dp"
+        android:layout_width="377dp"
+        android:layout_height="354dp"
+        android:layout_marginTop="88dp"
         android:background="@drawable/edit_text_background"
         android:hint="Please introduce yourself."
         android:inputType="textMultiLine"
         android:padding="12dp"
         android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_location"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.6"
         app:layout_constraintHorizontal_bias="0.0"
@@ -40,21 +57,22 @@
         app:layout_constraintHeight_percent="0.2"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_description"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btn_submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/border_button"
-        android:backgroundTint="@color/pink"
-        android:padding="16dp"
         android:text="POST"
-        android:textColor="@android:color/white"
         android:textSize="18sp"
+
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/et_location"
         app:layout_constraintVertical_bias="0.9" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

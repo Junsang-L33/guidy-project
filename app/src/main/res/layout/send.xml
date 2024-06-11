@@ -12,9 +12,9 @@
         android:background="@drawable/btn_background"
         android:padding="10dp"
         android:text="보내는 메시지"
+        android:backgroundTint="@color/colorPrimary"
         android:textColor="@color/white"
         android:textSize="18sp" />
-
 
     
 </RelativeLayout>
