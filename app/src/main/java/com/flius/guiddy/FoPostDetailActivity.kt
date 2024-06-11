@@ -39,7 +39,7 @@ class FoPostDetailActivity : AppCompatActivity() {
 
         findViewById<TextView>(R.id.tv_profilename).text = nickname
         findViewById<TextView>(R.id.tv_profiledetail5).text = free
-        Glide.with(this).load(imageUrl).into(findViewById(R.id.profileImage))
+        Glide.with(this).load(imageUrl).into(findViewById(R.id.imageView))
         mDbRef = FirebaseDatabase.getInstance().reference
 
         fetchProfileData(curruid)
