@@ -7,6 +7,7 @@
     android:padding="16dp"
     tools:context=".LoginActivity">
 
+    <!-- 상단 바 -->
     <TextView
         android:id="@+id/top_bar"
         android:layout_width="0dp"
@@ -24,6 +25,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- 자기소개 입력 -->
     <EditText
         android:id="@+id/free"
         android:layout_width="377dp"
@@ -42,6 +44,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
+    <!-- 금액 입력 -->
     <EditText
         android:id="@+id/money"
         android:layout_width="0dp"
@@ -60,13 +63,13 @@
         app:layout_constraintTop_toBottomOf="@+id/et_description"
         app:layout_constraintVertical_bias="0.0" />
 
+    <!-- 제출 버튼 -->
     <Button
         android:id="@+id/btn_submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="POST"
         android:textSize="18sp"
-
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"

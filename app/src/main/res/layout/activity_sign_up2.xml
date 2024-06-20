@@ -7,18 +7,19 @@
     android:layout_height="match_parent"
     tools:context=".SignUpActivity2">
 
+    <!-- 나라 입력 -->
     <EditText
         android:id="@+id/country_edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Country"
         android:inputType="textEmailAddress"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.593"
         tools:layout_editor_absoluteX="0dp" />
 
+    <!-- 언어 입력 -->
     <EditText
         android:id="@+id/language_edit"
         android:layout_width="match_parent"
@@ -30,6 +31,7 @@
         app:layout_constraintVertical_bias="0.771"
         tools:layout_editor_absoluteX="0dp" />
 
+    <!-- 닉네임 입력 -->
     <EditText
         android:id="@+id/nickname_edit"
         android:layout_width="match_parent"
@@ -41,6 +43,7 @@
         app:layout_constraintVertical_bias="0.51"
         tools:layout_editor_absoluteX="0dp" />
 
+    <!-- 회원가입 완료 버튼 -->
     <Button
         android:id="@+id/bt_SignUpConfirm2"
         android:layout_width="370dp"
@@ -55,6 +58,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.939" />
 
+    <!-- 성별 입력 -->
     <EditText
         android:id="@+id/sex_edit"
         android:layout_width="match_parent"
@@ -66,6 +70,7 @@
         app:layout_constraintVertical_bias="0.682"
         tools:layout_editor_absoluteX="0dp" />
 
+    <!-- 사진 등록 버튼 -->
     <Button
         android:id="@+id/bt_addpic"
         android:layout_width="wrap_content"
@@ -77,6 +82,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.43" />
 
+    <!-- 프로필 이미지 카드뷰 -->
     <androidx.cardview.widget.CardView
         android:layout_width="223dp"
         android:layout_height="257dp"
@@ -89,6 +95,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.3">
 
+        <!-- 프로필 이미지 뷰 -->
         <ImageView
             android:id="@+id/profileImage"
             android:layout_width="223dp"

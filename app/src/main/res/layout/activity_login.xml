@@ -6,15 +6,16 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:layout_margin="2dp"
-    android:gravity="top"
+    android:gravity="top">
 
-    >
-
+    <!-- 상단 빈 TextView -->
     <TextView
         android:id="@+id/tv_e1"
         android:layout_width="397dp"
         android:layout_height="51dp"
         android:text="" />
+
+    <!-- 중앙 이미지 뷰 -->
     <ImageView
         android:id="@+id/myImageView"
         android:layout_width="360dp"
@@ -27,26 +28,23 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-
-
-
+    <!-- 제목 텍스트 뷰 -->
     <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="cursive"
-            android:text="Guiddy"
-            android:textSize="60sp" />
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="Guiddy"
+        android:textSize="60sp" />
 
-
-
-
-
+    <!-- 중간 빈 TextView -->
     <TextView
         android:id="@+id/tV_e2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="" />
+
+    <!-- 이메일 입력 -->
     <EditText
         android:id="@+id/email_edit"
         android:layout_width="match_parent"
@@ -56,6 +54,7 @@
         android:background="@drawable/input_box"
         android:layout_margin="2dp"/>
 
+    <!-- 비밀번호 입력 -->
     <EditText
         android:id="@+id/password_edit"
         android:layout_width="match_parent"
@@ -65,12 +64,14 @@
         android:background="@drawable/input_box"
         android:layout_margin="2dp"/>
 
+
     <RadioGroup
         android:id="@+id/rg_userType"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
+        <!-- 내국인 선택 라디오 버튼 -->
         <RadioButton
             android:id="@+id/bt_radioLocal"
             android:layout_width="wrap_content"
@@ -78,6 +79,7 @@
             android:text="내국인"
             android:checked="true"/>
 
+        <!-- 외국인 선택 라디오 버튼 -->
         <RadioButton
             android:id="@+id/bt_radioForeign"
             android:layout_width="wrap_content"
@@ -86,12 +88,14 @@
 
     </RadioGroup>
 
+    <!-- 하단 빈 TextView -->
     <TextView
         android:id="@+id/tv_e3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="" />
 
+    <!-- 로그인 버튼 -->
     <Button
         android:id="@+id/bt_Login"
         android:layout_width="match_parent"
@@ -100,11 +104,9 @@
         android:text="로그인"
         android:textColor="#FFFFFF"
         android:layout_marginBottom="16dp"
-        android:background="@drawable/btn_background"
-        />
+        android:background="@drawable/btn_background" />
 
-
-
+    <!-- 회원가입 버튼 -->
     <Button
         android:id="@+id/bt_GoToSignUp"
         android:layout_width="match_parent"
@@ -112,9 +114,6 @@
         android:layout_gravity="center_horizontal"
         android:text="회원가입"
         android:textColor="#FFFFFF"
-
-        android:background="@drawable/btn_background"
-        />
-
+        android:background="@drawable/btn_background" />
 
 </LinearLayout>

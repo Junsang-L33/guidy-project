@@ -3,12 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- 메인 ConstraintLayout 정의 -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/linearLayout9"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".PostDetailActivity">
 
+        <!-- 배경색이 있는 큰 TextView -->
         <TextView
             android:id="@+id/textView3"
             android:layout_width="423dp"
@@ -19,6 +21,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <!-- 중앙에 배치된 테두리 이미지를 가진 ConstraintLayout -->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="357dp"
             android:layout_height="588dp"
@@ -28,9 +31,9 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.39">
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <!-- 금액을 표시하는 TextView -->
         <TextView
             android:id="@+id/amount"
             android:layout_width="150dp"
@@ -46,6 +49,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.567" />
 
+        <!-- 위치를 표시하는 TextView -->
         <TextView
             android:id="@+id/label_location"
             android:layout_width="150dp"
@@ -61,6 +65,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.567" />
 
+        <!-- 성별을 표시하는 TextView -->
         <TextView
             android:id="@+id/label_gender"
             android:layout_width="150dp"
@@ -76,6 +81,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.455" />
 
+        <!-- 언어를 표시하는 TextView -->
         <TextView
             android:id="@+id/label_language"
             android:layout_width="150dp"
@@ -91,6 +97,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.455" />
 
+        <!-- 닉네임을 표시하는 TextView -->
         <TextView
             android:id="@+id/label_name"
             android:layout_width="290dp"
@@ -106,6 +113,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.326" />
 
+        <!-- 언어를 표시하는 TextView -->
         <TextView
             android:id="@+id/tv_profiledetail1"
             android:layout_width="156dp"
@@ -128,6 +136,7 @@
             app:layout_constraintTop_toTopOf="@+id/tv_profilename"
             app:layout_constraintVertical_bias="0.192" />
 
+        <!-- 성별을 표시하는 TextView -->
         <TextView
             android:id="@+id/tv_profiledetail2"
             android:layout_width="156dp"
@@ -150,6 +159,7 @@
             app:layout_constraintTop_toTopOf="@+id/tv_profilename"
             app:layout_constraintVertical_bias="0.192" />
 
+        <!-- 하고싶은 말을 표시하는 TextView -->
         <TextView
             android:id="@+id/tv_profiledetail5"
             android:layout_width="334dp"
@@ -170,6 +180,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_profiledetail3" />
 
+        <!-- 이름을 표시하는 큰 TextView -->
         <TextView
             android:id="@+id/tv_profilename"
             android:layout_width="334dp"
@@ -192,6 +203,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.368" />
 
+        <!-- 나라 정보를 표시하는 TextView -->
         <TextView
             android:id="@+id/tv_profiledetail3"
             android:layout_width="156dp"
@@ -214,6 +226,7 @@
             app:layout_constraintTop_toTopOf="@+id/tv_profilename"
             app:layout_constraintVertical_bias="0.372" />
 
+        <!-- 결제 금액을 표시하는 TextView -->
         <TextView
             android:id="@+id/tv_pay"
             android:layout_width="156dp"
@@ -236,6 +249,7 @@
             app:layout_constraintTop_toTopOf="@+id/tv_profilename"
             app:layout_constraintVertical_bias="0.372" />
 
+        <!-- 이미지를 표시하는 ImageView -->
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="150dp"
@@ -249,6 +263,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <!-- 하단 배경용 TextView -->
         <TextView
             android:id="@+id/textView2"
             android:layout_width="410dp"
@@ -257,7 +272,6 @@
             app:layout_constraintEnd_toEndOf="@+id/textView3"
             app:layout_constraintStart_toStartOf="@+id/textView3"
             app:layout_constraintTop_toTopOf="parent" />
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
